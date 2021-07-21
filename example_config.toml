@@ -1,0 +1,28 @@
+Port = 8080
+[[Mocks]]
+  Name = "example-foo"
+  DelayInSeconds = 0
+  [Mocks.Request]
+    Resource = "/foo"
+    Method = "GET"
+  [Mocks.Response]
+    HTTPStatusCode = 200
+    Body = "Hi Foo"
+[[Mocks]]
+  Name = "example-var"
+  DelayInSeconds = 5
+  [Mocks.Request]
+    Resource = "/foo/var"
+    Method = "PUT"
+  [Mocks.Response]
+    HTTPStatusCode = 500
+    Body = "Bye Bar"
+[[Mocks]]
+  Name = "example-foo-other-method"
+  DelayInSeconds = 0
+  [Mocks.Request]
+    Resource = "/foo"
+    Method = "POST"
+  [Mocks.Response]
+    HTTPStatusCode = 201
+    Body = "Hi Again Foo"
