@@ -13,12 +13,13 @@ I want to use something similar to [Postman mock server](https://learning.postma
 ### Installation
 
 ```
-go install github.com/sgrodriguez/yams@master;
+go get github.com/sgrodriguez/yams
+go install github.com/sgrodriguez/yams
 yams config.toml
 ```
 or 
 ```
-git clone github.com/sgrodriguez/yams;
+git clone github.com/sgrodriguez/yams
 make
 ```
 
@@ -72,6 +73,6 @@ List all available mocks
 curl --location --request GET 'localhost:8080/mocks'
 ```
 #### Config
-[Example_Config](https://github.com/sgrodriguez/yams/example_config.toml)
+[Example_Config](https://github.com/sgrodriguez/yams/blob/main/example_config.toml)
 
 

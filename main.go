@@ -56,14 +56,16 @@ type Mock struct {
 }
 
 func main() {
-	tomlPath := "example_config.toml"
+	tomlPath := "config.toml"
 	if len(os.Args) > 1 {
 		tomlPath = os.Args[len(os.Args)-1]
 	}
+	log.Print("Loading yams config")
 	cfg, err := LoadConfig(tomlPath)
 	if err != nil {
 		log.Fatal(fmt.Errorf("error loading config %w", err))
 	}
+	log.Print("Starting yams server")
 	m := &Mocks{
 		mocks: sync.Map{},
 	}
