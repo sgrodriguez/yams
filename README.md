@@ -3,7 +3,7 @@
 ### Motivation
 I want to use something similar to [Postman mock server](https://learning.postman.com/docs/designing-and-developing-your-api/mocking-data/setting-up-mock/) but self hosted and without sending data to thirds party nor depends on their infra.
 
-### Featurses
+### Features
 
 * In memory
 * Load Mocks through config or in runtime via POST /mock 
